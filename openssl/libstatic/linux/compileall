@@ -1,0 +1,10 @@
+./openssl-arm
+./openssl-arm2
+./openssl-armhf
+./openssl-mips
+./openssl-mipsel
+./openssl-pogo
+./openssl-poky
+./openssl-poky64
+./openssl-x64
+./openssl-x86
