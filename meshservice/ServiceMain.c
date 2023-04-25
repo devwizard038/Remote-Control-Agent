@@ -1215,7 +1215,7 @@ INT_PTR CALLBACK DialogHandler(HWND hDlg, UINT message, WPARAM wParam, LPARAM lP
 		sprintf_s(ILibScratchPad, sizeof(ILibScratchPad), "-full%s %s%s", "install", autoproxy_checked != 0 ? "--autoproxy=" : "", autoproxy_checked != 0 ? (configured_autoproxy_value != NULL ? configured_autoproxy_value : "1") : "");
 		result = RunAsAdmin(ILibScratchPad, IsAdmin() == TRUE);
 
-		if (result)
+		if (!result)
 		{
 			EndDialog(hDlg, LOWORD(wParam));
 		}
